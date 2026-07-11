@@ -13,120 +13,77 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import { GalleryVerticalEndIcon, AudioLinesIcon, TerminalIcon, TerminalSquareIcon, BotIcon, BookOpenIcon, Settings2Icon, FrameIcon, PieChartIcon, MapIcon } from "lucide-react"
+import {
+  TerminalIcon,
+  LayoutDashboardIcon,
+  BriefcaseIcon,
+  MegaphoneIcon,
+  Settings2Icon,
+  UsersIcon,
+  TrendingUpIcon,
+  HeartHandshakeIcon,
+} from "lucide-react"
 
-// This is sample data.
+// Sample CRM Data
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    name: "Harshith",
+    email: "harshith@outskill.com",
+    avatar: "",
   },
   teams: [
     {
-      name: "Acme Inc",
-      logo: (
-        <GalleryVerticalEndIcon
-        />
-      ),
+      name: "Sales HQ",
+      logo: <BriefcaseIcon />,
       plan: "Enterprise",
     },
     {
-      name: "Acme Corp.",
-      logo: (
-        <AudioLinesIcon
-        />
-      ),
+      name: "Marketing Ops",
+      logo: <MegaphoneIcon />,
       plan: "Startup",
     },
     {
       name: "Evil Corp.",
-      logo: (
-        <TerminalIcon
-        />
-      ),
+      logo: <TerminalIcon />,
       plan: "Free",
     },
   ],
   navMain: [
     {
-      title: "Playground",
-      url: "#",
-      icon: (
-        <TerminalSquareIcon
-        />
-      ),
+      title: "Dashboard",
+      url: "/dashboard",
+      icon: <LayoutDashboardIcon />,
       isActive: true,
       items: [
         {
-          title: "History",
-          url: "#",
+          title: "Overview",
+          url: "/dashboard",
         },
         {
-          title: "Starred",
-          url: "#",
-        },
-        {
-          title: "Settings",
-          url: "#",
+          title: "Analytics",
+          url: "/dashboard/analytics",
         },
       ],
     },
     {
-      title: "Models",
+      title: "Sales",
       url: "#",
-      icon: (
-        <BotIcon
-        />
-      ),
+      icon: <TrendingUpIcon />,
       items: [
         {
-          title: "Genesis",
-          url: "#",
+          title: "Contacts",
+          url: "/dashboard/contacts",
         },
         {
-          title: "Explorer",
-          url: "#",
-        },
-        {
-          title: "Quantum",
-          url: "#",
-        },
-      ],
-    },
-    {
-      title: "Documentation",
-      url: "#",
-      icon: (
-        <BookOpenIcon
-        />
-      ),
-      items: [
-        {
-          title: "Introduction",
-          url: "#",
-        },
-        {
-          title: "Get Started",
-          url: "#",
-        },
-        {
-          title: "Tutorials",
-          url: "#",
-        },
-        {
-          title: "Changelog",
-          url: "#",
+          title: "Deals Pipeline",
+          url: "/dashboard/deals",
         },
       ],
     },
     {
       title: "Settings",
       url: "#",
-      icon: (
-        <Settings2Icon
-        />
-      ),
+      icon: <Settings2Icon />,
       items: [
         {
           title: "General",
@@ -137,11 +94,7 @@ const data = {
           url: "#",
         },
         {
-          title: "Billing",
-          url: "#",
-        },
-        {
-          title: "Limits",
+          title: "Integrations",
           url: "#",
         },
       ],
@@ -149,28 +102,19 @@ const data = {
   ],
   projects: [
     {
-      name: "Design Engineering",
+      name: "Sales Team",
       url: "#",
-      icon: (
-        <FrameIcon
-        />
-      ),
+      icon: <UsersIcon />,
     },
     {
-      name: "Sales & Marketing",
+      name: "Marketing Ops",
       url: "#",
-      icon: (
-        <PieChartIcon
-        />
-      ),
+      icon: <MegaphoneIcon />,
     },
     {
-      name: "Travel",
+      name: "Customer Success",
       url: "#",
-      icon: (
-        <MapIcon
-        />
-      ),
+      icon: <HeartHandshakeIcon />,
     },
   ],
 }

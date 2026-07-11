@@ -36,7 +36,10 @@ export function NavUser({
   const [isDark, setIsDark] = React.useState(false)
 
   React.useEffect(() => {
-    setIsDark(document.documentElement.classList.contains("dark"))
+    const handle = requestAnimationFrame(() => {
+      setIsDark(document.documentElement.classList.contains("dark"))
+    })
+    return () => cancelAnimationFrame(handle)
   }, [])
 
   const toggleTheme = () => {
