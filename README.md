@@ -1,4 +1,4 @@
-# ChatCN CRM Dashboard Outscale
+# shadCN CRM Dashboard Outskill
 
 This repository serves as a learner resource for the **AI Catalyst C2 deep dive into Antigravity**.
 
