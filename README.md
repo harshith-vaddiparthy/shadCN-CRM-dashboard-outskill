@@ -3,6 +3,8 @@
   
   # ShadCN CRM Dashboard Outskill
   
+  [![LinkedIn Connect](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/harshith-vaddiparthy/)
+  
   ### 🚀 An Advanced, Production-Ready CRM Blueprint Built for Modern Web Engineering Learners
 
   [![React](https://img.shields.io/badge/React-19-blue.svg?logo=react&logoColor=white)](https://react.dev)
